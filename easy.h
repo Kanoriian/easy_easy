@@ -29,7 +29,7 @@ int itc_sqrt(int num);
 
 int itc_abs(int input);
 
-double itc_fabc(double input);
+double itc_fabs(double input);
 
 int itc_revnbr(int input);
 
