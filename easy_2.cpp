@@ -7,17 +7,32 @@ bool itc_iseven(int input) {
 }
 
 int itc_max(int a, int b) {
-    return a > b ? a : b;
+    if (a > b) {
+        return a;
+    }else
+        return b;
 }
 
 int itc_min(int a, int b) {
-    return a < b ? a : b;
+    if (a < b) {
+        return a;
+    }
+    else
+        return b;
 }
 
 double itc_fmax(double a, double b) {
-    return a > b ? a : b;
+    if (a > b) {
+        return a;
+    }
+    else
+        return b;
 }
 
 double itc_fmin(double a, double b) {
-    return a < b ? a : b;
+    if (a < b) {
+        return a;
+    }
+    else
+        return b;
 }

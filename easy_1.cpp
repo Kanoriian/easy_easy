@@ -11,17 +11,26 @@ void itc_fio() {
 }
 
 int itc_abs(int input) {
-    return input < 0 ? input * -1 : input;
+    if (input < 0) {
+        return input * -1;
+    }
+    else
+        return input;
 }
 
 
 double itc_fabs(double input) {
-    return input < 0 ? input * -1 : input;
+    if (input < 0) {
+        return input * -1;
+    }
+    else
+        return input;
 }
 
 int itc_revnbr(int input) {
-    int a = input / 100;
-    int b = input / 10 % 10;
-    int c = input % 10;
+    int a, b, c;
+    a = input / 100;
+    b = input / 10 % 10;
+    c = input % 10;
     return c * 100 + b * 10 + a;
 }
